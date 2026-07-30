@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - To-Do App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="app-container login-container">
+        <header>
+            <h1 id="formTitle">Welcome Back</h1>
+            <p id="formSubtitle">Sign in to your account</p>
+        </header>
+
+        <!-- Tab Switcher -->
+        <div class="tab-switcher">
+            <button id="loginTab" class="tab-btn active" onclick="switchTab('login')">Sign In</button>
+            <button id="registerTab" class="tab-btn" onclick="switchTab('register')">Register</button>
+        </div>
+
+        <form id="authForm">
+            <div class="form-group">
+                <input type="text" id="username" placeholder="Username" required autocomplete="username">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+            </div>
+            <div class="error-message" id="errorMessage"></div>
+            <button type="submit" class="primary-btn" id="submitBtn">Sign In</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
